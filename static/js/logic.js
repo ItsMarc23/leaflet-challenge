@@ -1,6 +1,6 @@
 // Store our API endpoint as queryUrl.
 
-var queryUrl = 'https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson'
+var queryUrl = 'https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_month.geojson'
 
 // Query the URL
 d3.json(queryUrl).then(function (data) {
@@ -98,6 +98,9 @@ legend.onAdd = function() {
     let legendData = "<h3> Depth </h3>";
     
     div.innerHTML = legendData;
+
+    // Set background color for the legend
+    div.style.backgroundColor = 'white';
     
     // go through each "depth" to label and color the legend
     // push to labels array as list item
