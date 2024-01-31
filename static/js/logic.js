@@ -96,11 +96,11 @@ legend.onAdd = function() {
     let depths = [-10, 10, 30, 50, 70, 90];
     let labels = [];
     let legendData = "<h3> Depth </h3>";
-    
+    div.style.backgroundColor = 'white';
     div.innerHTML = legendData;
 
     // Set background color for the legend
-    div.style.backgroundColor = 'white';
+    
     
     // go through each "depth" to label and color the legend
     // push to labels array as list item
